@@ -19,13 +19,12 @@
     }
 
     h1 {Socials
-      color: #8B00FF;
+      color: #7FFF00; /* Light green color */
     }
 
     main {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
@@ -48,7 +47,6 @@
     /* Media Query for Responsive Design */
     @media (max-width: 768px) {
       main {
-        flex-direction: column;
         padding: 0 20px;
       }
     }
@@ -60,13 +58,18 @@
   </header>
 
   <main>
-    <a href="https://www.instagram.com/mekhi.tybb/" class="link-button">Insta ;)</a>
-    <a href="https://t.snapchat.com/AnAt9D0o" class="link-button">Snap ;)</a>
-    <a href="https://www.twitch.tv/mekhitybb" class="link-button">Twitch!</a>
-    <a href="https://www.tiktok.com/@mekhi.tyb?is_from_webapp=1&sender_device=pc" class="link-button">Tiktokk</a>
+    <div class="tiktok-twitch-container">
+      <a href="https://www.tiktok.com/@mekhi.tyb?is_from_webapp=1&sender_device=pc" class="link-button">Tiktokk</a>
+      <a href="https://www.twitch.tv/mekhitybb" class="link-button">Twitch!</a>
+    </div>
+    <div class="snapchat-insta-container">
+      <a href="https://t.snapchat.com/AnAt9D0o" class="link-button">Snap ;)</a>
+      <a href="https://www.instagram.com/mekhi.tybb/" class="link-button">Insta ;)</a>
+    </div>
   </main>
 </body>
 </html>
+
 
 
 
