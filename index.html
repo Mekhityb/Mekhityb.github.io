@@ -13,21 +13,24 @@
     }
 
     header {
-      background-color: 
+      background-color: #000000;
       padding: 20px;
       text-align: center;
     }
 
-    h1 { Socials
+    h1 {Socials
       color: #8B00FF;
     }
 
     main {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      gap: 1 inch;
+      padding: 0 1 inch;
     }
 
     .link-button {
@@ -40,6 +43,14 @@
       cursor: pointer;
       border-radius: 5px;
       outline: 2px solid #008000;
+    }
+
+    /* Media Query for Responsive Design */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        padding: 0 20px;
+      }
     }
   </style>
 </head>
@@ -56,6 +67,7 @@
   </main>
 </body>
 </html>
+
 
 
 
