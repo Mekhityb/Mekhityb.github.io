@@ -8,8 +8,6 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url('one_piece_background.jpg');
-      background-size: cover;
     }
 
     header {
@@ -18,7 +16,7 @@
       text-align: center;
     }
 
-    h1 {Socials
+    h1 {
       color: #7FFF00; /* Light green color */
     }
 
@@ -44,10 +42,39 @@
       outline: 2px solid #008000;
     }
 
-    /* Media Query for Responsive Design */
-    @media (max-width: 768px) {
+    /* Column Classes */
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+
+    /* Media Queries for Responsive Design */
+    @media only screen and (max-width: 768px) {
       main {
         padding: 0 20px;
+      }
+
+      [class^="col-"] {
+        width: 100%;
+      }
+
+      body {
+        background-image: url('one_piece_background_mobile.jpg');
+      }
+    }
+
+    @media only screen and (min-width: 769px) {
+      body {
+        background-image: url('one_piece_background_desktop.jpg');
+        background-size: cover;
       }
     }
   </style>
@@ -59,16 +86,17 @@
 
   <main>
     <div class="tiktok-twitch-container">
-      <a href="https://www.tiktok.com/@mekhi.tyb?is_from_webapp=1&sender_device=pc" class="link-button">Tiktokk</a>
-      <a href="https://www.twitch.tv/mekhitybb" class="link-button">Twitch!</a>
+      <a href="https://www.tiktok.com/@mekhi.tyb?is_from_webapp=1&sender_device=pc" class="link-button col-6">Tiktokk</a>
+      <a href="https://www.twitch.tv/mekhitybb" class="link-button col-6">Twitch!</a>
     </div>
     <div class="snapchat-insta-container">
-      <a href="https://t.snapchat.com/AnAt9D0o" class="link-button">Snap ;)</a>
-      <a href="https://www.instagram.com/mekhi.tybb/" class="link-button">Insta ;)</a>
+      <a href="https://t.snapchat.com/AnAt9D0o" class="link-button col-6">Snap ;)</a>
+      <a href="https://www.instagram.com/mekhi.tybb/" class="link-button col-6">Insta ;)</a>
     </div>
   </main>
 </body>
 </html>
+
 
 
 
